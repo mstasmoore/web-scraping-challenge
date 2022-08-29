@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 10,
    "id": "b44d9cae",
    "metadata": {
     "scrolled": true
@@ -19,10 +19,21 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 11,
    "id": "9358f73c",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'C:\\\\Users\\\\mstas\\\\.wdm\\\\drivers\\\\chromedriver\\\\win32\\\\104.0.5112\\\\chromedriver.exe'"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
     "manager = ChromeDriverManager() \n",
     "manager.install()"
@@ -30,7 +41,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 12,
    "id": "3cfb12c7",
    "metadata": {},
    "outputs": [],
@@ -40,18 +51,35 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "85fa5af3",
+   "execution_count": 13,
+   "id": "b5d73441",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Requirement already satisfied: webdriver-manager in c:\\users\\mstas\\anaconda3\\lib\\site-packages (3.8.3)\n",
+      "Requirement already satisfied: requests in c:\\users\\mstas\\anaconda3\\lib\\site-packages (from webdriver-manager) (2.26.0)\n",
+      "Requirement already satisfied: tqdm in c:\\users\\mstas\\anaconda3\\lib\\site-packages (from webdriver-manager) (4.62.3)\n",
+      "Requirement already satisfied: python-dotenv in c:\\users\\mstas\\anaconda3\\lib\\site-packages (from webdriver-manager) (0.20.0)\n",
+      "Requirement already satisfied: certifi>=2017.4.17 in c:\\users\\mstas\\anaconda3\\lib\\site-packages (from requests->webdriver-manager) (2021.10.8)\n",
+      "Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\\users\\mstas\\anaconda3\\lib\\site-packages (from requests->webdriver-manager) (1.26.7)\n",
+      "Requirement already satisfied: idna<4,>=2.5 in c:\\users\\mstas\\anaconda3\\lib\\site-packages (from requests->webdriver-manager) (3.2)\n",
+      "Requirement already satisfied: charset-normalizer~=2.0.0 in c:\\users\\mstas\\anaconda3\\lib\\site-packages (from requests->webdriver-manager) (2.0.4)\n",
+      "Requirement already satisfied: colorama in c:\\users\\mstas\\anaconda3\\lib\\site-packages (from tqdm->webdriver-manager) (0.4.4)\n",
+      "Note: you may need to restart the kernel to use updated packages.\n"
+     ]
+    }
+   ],
    "source": [
     "pip install webdriver-manager"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 18,
-   "id": "6dc50648",
+   "execution_count": 14,
+   "id": "64efa279",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -68,7 +96,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 19,
+   "execution_count": 16,
    "id": "670273b3",
    "metadata": {},
    "outputs": [],
@@ -85,8 +113,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 20,
-   "id": "225a27c1",
+   "execution_count": 19,
+   "id": "2a464c61",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -99,8 +127,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 21,
-   "id": "cc9d6640",
+   "execution_count": 20,
+   "id": "e744dfc1",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -111,8 +139,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 22,
-   "id": "645bc87d",
+   "execution_count": 21,
+   "id": "585454e1",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -123,8 +151,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 23,
-   "id": "d0817b79",
+   "execution_count": 22,
+   "id": "a9260dd7",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -133,16 +161,16 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 24,
-   "id": "1020d743",
+   "execution_count": 23,
+   "id": "c49587c9",
    "metadata": {},
    "outputs": [
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "What's Mars Solar Conjunction, and Why Does It Matter?\n",
-      "NASA spacecraft at Mars are going to be on their own for a few weeks when the Sun comes between Mars and Earth, interrupting communications.\n"
+      "NASA's InSight 'Hears' Peculiar Sounds on Mars\n",
+      "Listen to the marsquakes and other, less-expected sounds that the Mars lander has been detecting.\n"
      ]
     }
    ],
@@ -153,15 +181,15 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 12,
-   "id": "906ce840",
+   "execution_count": 24,
+   "id": "8574337e",
    "metadata": {},
    "outputs": [
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "https://spaceimages-mars.com/image/featured/mars1.jpg\n"
+      "https://spaceimages-mars.com/image/featured/mars2.jpg\n"
      ]
     }
    ],
@@ -185,114 +213,20 @@
   {
    "cell_type": "code",
    "execution_count": 25,
-   "id": "caa7b534",
+   "id": "c3543a1b",
    "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<style scoped>\n",
-       "    .dataframe tbody tr th:only-of-type {\n",
-       "        vertical-align: middle;\n",
-       "    }\n",
-       "\n",
-       "    .dataframe tbody tr th {\n",
-       "        vertical-align: top;\n",
-       "    }\n",
-       "\n",
-       "    .dataframe thead th {\n",
-       "        text-align: right;\n",
-       "    }\n",
-       "</style>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>0</th>\n",
-       "      <th>1</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>Equatorial Diameter:</td>\n",
-       "      <td>6,792 km</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>Polar Diameter:</td>\n",
-       "      <td>6,752 km</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>Mass:</td>\n",
-       "      <td>6.39 × 10^23 kg (0.11 Earths)</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>Moons:</td>\n",
-       "      <td>2 (Phobos &amp; Deimos)</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>Orbit Distance:</td>\n",
-       "      <td>227,943,824 km (1.38 AU)</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>5</th>\n",
-       "      <td>Orbit Period:</td>\n",
-       "      <td>687 days (1.9 years)</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>6</th>\n",
-       "      <td>Surface Temperature:</td>\n",
-       "      <td>-87 to -5 °C</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>7</th>\n",
-       "      <td>First Record:</td>\n",
-       "      <td>2nd millennium BC</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>8</th>\n",
-       "      <td>Recorded By:</td>\n",
-       "      <td>Egyptian astronomers</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "                      0                              1\n",
-       "0  Equatorial Diameter:                       6,792 km\n",
-       "1       Polar Diameter:                       6,752 km\n",
-       "2                 Mass:  6.39 × 10^23 kg (0.11 Earths)\n",
-       "3                Moons:            2 (Phobos & Deimos)\n",
-       "4       Orbit Distance:       227,943,824 km (1.38 AU)\n",
-       "5         Orbit Period:           687 days (1.9 years)\n",
-       "6  Surface Temperature:                   -87 to -5 °C\n",
-       "7         First Record:              2nd millennium BC\n",
-       "8          Recorded By:           Egyptian astronomers"
-      ]
-     },
-     "execution_count": 25,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
+   "outputs": [],
    "source": [
     "#mars\n",
     "\n",
-    "mars_facts_url = \"https://space-facts.com/mars/\"\n",
-    "table = pd.read_html(mars_facts_url)\n",
-    "table[0]"
+    "mars_facts_url = 'https://galaxyfacts-mars.com'\n",
+    "browser.visit(mars_facts_url)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 27,
-   "id": "1e60e79c",
+   "execution_count": 26,
+   "id": "e5bf243c",
    "metadata": {},
    "outputs": [
     {
@@ -316,74 +250,54 @@
        "  <thead>\n",
        "    <tr style=\"text-align: right;\">\n",
        "      <th></th>\n",
+       "      <th>Mars</th>\n",
+       "    </tr>\n",
+       "    <tr>\n",
        "      <th>Facts</th>\n",
-       "      <th>Value</th>\n",
+       "      <th></th>\n",
        "    </tr>\n",
        "  </thead>\n",
        "  <tbody>\n",
        "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>Equatorial Diameter:</td>\n",
-       "      <td>6,792 km</td>\n",
+       "      <th>Diameter:</th>\n",
+       "      <td>6,779 km</td>\n",
        "    </tr>\n",
        "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>Polar Diameter:</td>\n",
-       "      <td>6,752 km</td>\n",
+       "      <th>Mass:</th>\n",
+       "      <td>6.39 × 10^23 kg</td>\n",
        "    </tr>\n",
        "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>Mass:</td>\n",
-       "      <td>6.39 × 10^23 kg (0.11 Earths)</td>\n",
+       "      <th>Moons:</th>\n",
+       "      <td>2</td>\n",
        "    </tr>\n",
        "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>Moons:</td>\n",
-       "      <td>2 (Phobos &amp; Deimos)</td>\n",
+       "      <th>Distance from Sun:</th>\n",
+       "      <td>227,943,824 km</td>\n",
        "    </tr>\n",
        "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>Orbit Distance:</td>\n",
-       "      <td>227,943,824 km (1.38 AU)</td>\n",
+       "      <th>Length of Year:</th>\n",
+       "      <td>687 Earth days</td>\n",
        "    </tr>\n",
        "    <tr>\n",
-       "      <th>5</th>\n",
-       "      <td>Orbit Period:</td>\n",
-       "      <td>687 days (1.9 years)</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>6</th>\n",
-       "      <td>Surface Temperature:</td>\n",
+       "      <th>Temperature:</th>\n",
        "      <td>-87 to -5 °C</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>7</th>\n",
-       "      <td>First Record:</td>\n",
-       "      <td>2nd millennium BC</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>8</th>\n",
-       "      <td>Recorded By:</td>\n",
-       "      <td>Egyptian astronomers</td>\n",
        "    </tr>\n",
        "  </tbody>\n",
        "</table>\n",
        "</div>"
       ],
       "text/plain": [
-       "                  Facts                          Value\n",
-       "0  Equatorial Diameter:                       6,792 km\n",
-       "1       Polar Diameter:                       6,752 km\n",
-       "2                 Mass:  6.39 × 10^23 kg (0.11 Earths)\n",
-       "3                Moons:            2 (Phobos & Deimos)\n",
-       "4       Orbit Distance:       227,943,824 km (1.38 AU)\n",
-       "5         Orbit Period:           687 days (1.9 years)\n",
-       "6  Surface Temperature:                   -87 to -5 °C\n",
-       "7         First Record:              2nd millennium BC\n",
-       "8          Recorded By:           Egyptian astronomers"
+       "                               Mars\n",
+       "Facts                              \n",
+       "Diameter:                  6,779 km\n",
+       "Mass:               6.39 × 10^23 kg\n",
+       "Moons:                            2\n",
+       "Distance from Sun:   227,943,824 km\n",
+       "Length of Year:      687 Earth days\n",
+       "Temperature:           -87 to -5 °C"
       ]
      },
-     "execution_count": 27,
+     "execution_count": 26,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -391,25 +305,29 @@
    "source": [
     "#data set up \n",
     "\n",
-    "df = table[0]\n",
-    "df.columns = [\"Facts\", \"Value\"]\n",
-    "df.set_index([\"Facts\"])\n",
+    "tables = pd.read_html(mars_facts_url)\n",
+    "df = tables[0]\n",
+    "df.rename(columns={0:'Facts',1:'Mars'}, inplace=True)\n",
+    "df = df.iloc[1: , :]\n",
+    "df = df.drop([2], axis=1)\n",
+    "df = df.reset_index(drop=True)\n",
+    "df.set_index('Facts', inplace=True)\n",
     "df"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 28,
-   "id": "b60fd984",
+   "execution_count": 27,
+   "id": "9c7fb06f",
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "'<table border=\"1\" class=\"dataframe\">\\n  <thead>\\n    <tr style=\"text-align: right;\">\\n      <th></th>\\n      <th>Facts</th>\\n      <th>Value</th>\\n    </tr>\\n  </thead>\\n  <tbody>\\n    <tr>\\n      <th>0</th>\\n      <td>Equatorial Diameter:</td>\\n      <td>6,792 km</td>\\n    </tr>\\n    <tr>\\n      <th>1</th>\\n      <td>Polar Diameter:</td>\\n      <td>6,752 km</td>\\n    </tr>\\n    <tr>\\n      <th>2</th>\\n      <td>Mass:</td>\\n      <td>6.39 × 10^23 kg (0.11 Earths)</td>\\n    </tr>\\n    <tr>\\n      <th>3</th>\\n      <td>Moons:</td>\\n      <td>2 (Phobos &amp; Deimos)</td>\\n    </tr>\\n    <tr>\\n      <th>4</th>\\n      <td>Orbit Distance:</td>\\n      <td>227,943,824 km (1.38 AU)</td>\\n    </tr>\\n    <tr>\\n      <th>5</th>\\n      <td>Orbit Period:</td>\\n      <td>687 days (1.9 years)</td>\\n    </tr>\\n    <tr>\\n      <th>6</th>\\n      <td>Surface Temperature:</td>\\n      <td>-87 to -5 °C</td>\\n    </tr>\\n    <tr>\\n      <th>7</th>\\n      <td>First Record:</td>\\n      <td>2nd millennium BC</td>\\n    </tr>\\n    <tr>\\n      <th>8</th>\\n      <td>Recorded By:</td>\\n      <td>Egyptian astronomers</td>\\n    </tr>\\n  </tbody>\\n</table>'"
+       "'<table border=\"1\" class=\"dataframe\">\\n  <thead>\\n    <tr style=\"text-align: right;\">\\n      <th></th>\\n      <th>Mars</th>\\n    </tr>\\n    <tr>\\n      <th>Facts</th>\\n      <th></th>\\n    </tr>\\n  </thead>\\n  <tbody>\\n    <tr>\\n      <th>Diameter:</th>\\n      <td>6,779 km</td>\\n    </tr>\\n    <tr>\\n      <th>Mass:</th>\\n      <td>6.39 × 10^23 kg</td>\\n    </tr>\\n    <tr>\\n      <th>Moons:</th>\\n      <td>2</td>\\n    </tr>\\n    <tr>\\n      <th>Distance from Sun:</th>\\n      <td>227,943,824 km</td>\\n    </tr>\\n    <tr>\\n      <th>Length of Year:</th>\\n      <td>687 Earth days</td>\\n    </tr>\\n    <tr>\\n      <th>Temperature:</th>\\n      <td>-87 to -5 °C</td>\\n    </tr>\\n  </tbody>\\n</table>'"
       ]
      },
-     "execution_count": 28,
+     "execution_count": 27,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -421,8 +339,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 29,
-   "id": "1979de23",
+   "execution_count": 28,
+   "id": "20f40ec3",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -434,15 +352,15 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 30,
-   "id": "4aea3c8f",
+   "execution_count": 29,
+   "id": "1884501b",
    "metadata": {},
    "outputs": [
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "What's Mars Solar Conjunction, and Why Does It Matter?\n",
+      "NASA's InSight 'Hears' Peculiar Sounds on Mars\n",
       "['https://marshemispheres.com/images/f5e372a36edfa389625da6d0cc25d905_cerberus_enhanced.tif_full.jpg', 'https://marshemispheres.com/images/3778f7b43bbbc89d6e3cfabb3613ba93_schiaparelli_enhanced.tif_full.jpg', 'https://marshemispheres.com/images/555e6403a6ddd7ba16ddb0e471cadcf7_syrtis_major_enhanced.tif_full.jpg', 'https://marshemispheres.com/images/b3c7c6c9138f57b4756be9b9c43e3a48_valles_marineris_enhanced.tif_full.jpg']\n"
      ]
     }
@@ -468,8 +386,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 31,
-   "id": "c3a9ea05",
+   "execution_count": 30,
+   "id": "f4e3fe9f",
    "metadata": {},
    "outputs": [
     {
@@ -485,7 +403,7 @@
        "  'img_url': 'https://marshemispheres.com/images/b3c7c6c9138f57b4756be9b9c43e3a48_valles_marineris_enhanced.tif_full.jpg'}]"
       ]
      },
-     "execution_count": 31,
+     "execution_count": 30,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -503,32 +421,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "e14f6fb0",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "a8ece118",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "9c4ba2c2",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 40,
-   "id": "16ebf473",
+   "execution_count": 31,
+   "id": "43e1882d",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -537,24 +431,36 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "11f8396b",
+   "execution_count": 32,
+   "id": "6accda6f",
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'news_title' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m~\\AppData\\Local\\Temp/ipykernel_8612/1797759991.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m mars_data = {\n\u001b[1;32m----> 2\u001b[1;33m             \u001b[1;34m'news_title'\u001b[0m\u001b[1;33m:\u001b[0m \u001b[0mnews_title\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      3\u001b[0m             \u001b[1;34m'news_paragraph'\u001b[0m\u001b[1;33m:\u001b[0m \u001b[0mnews_paragraph\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      4\u001b[0m             \u001b[1;34m'featured_image'\u001b[0m\u001b[1;33m:\u001b[0m \u001b[0mfeatured_image_url\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      5\u001b[0m             \u001b[1;34m'mars_facts'\u001b[0m\u001b[1;33m:\u001b[0m \u001b[0mhtml_table\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mNameError\u001b[0m: name 'news_title' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "mars_data = {\n",
+    "            'news_title': news_title, \n",
+    "            'news_paragraph': news_paragraph, \n",
+    "            'featured_image': featured_image_url,\n",
+    "            'mars_facts': html_table,\n",
+    "            'mars_hemisphere_images': hemisphere_list\n",
+    "            }"
+   ]
   },
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "9a7b9b5f",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "bcbd61ab",
+   "id": "f60e86f0",
    "metadata": {},
    "outputs": [],
    "source": []
